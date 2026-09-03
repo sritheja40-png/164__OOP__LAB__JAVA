@@ -1,14 +1,24 @@
 # Object-Oriented Programming (OOP) Java Laboratory
 
-A structured collection of Java programs developed to demonstrate and practice fundamental **Object-Oriented Programming concepts**.
+A structured collection of Java programs developed to demonstrate and practice fundamental **Object-Oriented Programming (OOP) concepts**.
 
-This repository covers important Java concepts including **classes and objects, constructors, packages, inheritance, polymorphism, abstraction, interfaces, exception handling, wrapper classes, multithreading, inter-thread communication, collections, and file handling**.
+This repository covers important Java concepts including **classes and objects, constructors, packages, inheritance, polymorphism, abstraction, interfaces, exception handling, wrapper classes, multithreading, inter-thread communication, collections, file handling, JavaFX, JDBC, and database connectivity**.
 
-The experiments are organized individually, making the repository easy to navigate, compile, and use for academic laboratory practice.
+The experiments are organized individually, making the repository easy to navigate, understand, compile, and use for academic laboratory practice.
 
 ---
 
-## Repository Structure
+## Project Overview
+
+This repository contains a collection of **11 Java Object-Oriented Programming laboratory experiments** designed to provide practical experience with core Java and OOP concepts.
+
+The experiments progress from fundamental programming concepts such as **classes, constructors, and packages** to advanced concepts including **inheritance, abstraction, multithreading, file handling, graphical user interface development, and database connectivity**.
+
+Each experiment is organized in a separate directory for easy navigation and execution.
+
+---
+
+# Repository Structure
 
 ```text
 OOP_JAVA__161/
@@ -45,8 +55,12 @@ OOP_JAVA__161/
 ├── Ex_9_String_Operations_ArrayList/
 │   └── StringMenu.java
 │
-└── Ex_10_File_Handling_ListFiles/
-    └── File_Handling_ListFiles.java
+├── Ex_10_File_Handling_ListFiles/
+│   └── File_Handling_ListFiles.java
+│
+└── Ex_11_JavaFX_JDBC_CRUD/
+    ├── database_setup.sql
+    └── StudentManagementApp.java
 ```
 
 ---
@@ -65,8 +79,11 @@ OOP_JAVA__161/
 | 8   | Railway Booking System           | Synchronization, `wait()`, `notifyAll()`          |
 | 9   | String Operations                | ArrayList, String Manipulation, Collections       |
 | 10  | File Handling                    | Java File API, Directory and File Operations      |
+| 11  | Student Management CRUD          | JavaFX, JDBC, MySQL, CRUD Operations              |
 
 ---
+
+# Experiment Details
 
 ## Experiment 1 — Telephone Bill Calculator
 
@@ -336,18 +353,88 @@ java File_Handling_ListFiles
 
 ---
 
+## Experiment 11 — JavaFX JDBC Student Management CRUD
+
+**Directory:** `Ex_11_JavaFX_JDBC_CRUD/`
+
+A desktop-based **Student Management System** developed using JavaFX and JDBC.
+
+The application provides a graphical interface for managing student records stored in a MySQL database and demonstrates complete CRUD functionality.
+
+### Features
+
+* Add Student Records
+* View Student Records
+* Update Existing Records
+* Delete Student Records
+* JavaFX Graphical User Interface
+* MySQL Database Integration
+
+### Concepts
+
+* JavaFX
+* JDBC
+* MySQL
+* CRUD Operations
+* Database Connectivity
+* SQL Queries
+* Event Handling
+
+### Database Setup
+
+Execute the `database_setup.sql` file in MySQL before running the application.
+
+The database structure includes a student table for storing information such as:
+
+* Student ID
+* Student Name
+* Age
+* Course
+
+### Compilation and Execution
+
+Ensure that JavaFX and the MySQL JDBC driver are properly configured in your development environment.
+
+Compile the application:
+
+```bash
+javac StudentManagementApp.java
+```
+
+Run the application:
+
+```bash
+java StudentManagementApp
+```
+
+> Make sure that MySQL Server is running and the database credentials configured in the application are correct before execution.
+
+---
+
 # Prerequisites
 
-Before running the programs, ensure that the following software is installed.
+Before running the experiments, ensure that the following software is installed.
 
 * Java Development Kit (JDK) 17 or later
 * Command Prompt, PowerShell, or Terminal
 * Any Java-compatible IDE such as IntelliJ IDEA, Eclipse, or VS Code
 
+For **Experiment 11**, you will also need:
+
+* MySQL Server
+* JavaFX SDK
+* MySQL Connector/J
+
 Verify your Java installation:
 
 ```bash
 java --version
+```
+
+Verify the Java compiler:
+
+```bash
+javac --version
 ```
 
 ---
@@ -392,7 +479,7 @@ java TelephoneBill
 
 After completing these experiments, you will gain practical experience with:
 
-* Object-Oriented Programming principles
+* Object-Oriented Programming Principles
 * Classes and Objects
 * Constructors
 * Packages
@@ -408,12 +495,18 @@ After completing these experiments, you will gain practical experience with:
 * Java Collections
 * String Manipulation
 * File Handling
+* JavaFX GUI Development
+* JDBC Database Connectivity
+* MySQL Database Operations
+* CRUD Application Development
 
 ---
 
 ## Author
 
 **Theja Sri**
+
+---
 
 ## License
 
